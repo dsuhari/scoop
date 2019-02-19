@@ -1,0 +1,3 @@
+sudo -su hive
+sqoop import --connect jdbc:mysql://abacus.cb4gz63s1aqm.eu-central-1.rds.amazonaws.com:3306/abacus -table finrep_meldung --username root -P -hive-import --create-hive-table --hive-table default.abacus
+hadoop fs -rm -r /user/hive/finrep_meldung/
